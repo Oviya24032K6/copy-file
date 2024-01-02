@@ -28,21 +28,22 @@ write() is used to write the lines of main file to the empty file or to the dire
 ## DEVELOPED BY: OVIYA P
 ## REFERENCE NUMBER: 212223110033
 
-import pandas as pd
-
-df=pd.read_csv('nba.csv')
-
-print(df.head(10))
-
-print("Number of rows: ",len(df.axes[0]))
-
-print("Number of columns: ",len(df.axes[1])
+def fun(f_one,f_second):
+    with open(f_one) as fp:
+        with open(f_second,"w") as fp1:
+            data=fp.read()
+            fp1.write(data)
+f_one=input("enter the filename:1 ")
+f_second=input("enter the filename:2 ")
+fun(f_one,f_second)
 
 
 ### OUTPUT:
-![OUTPUT](image.png)
+![image](https://github.com/Oviya24032K6/copy-file/assets/147139999/f624da7d-c0ea-42e6-8874-a9f5ffd7fceb)
 
-![OUTPUT](image-1.png)
+![fileone](https://github.com/Oviya24032K6/copy-file/assets/147139999/2eff0d7d-c9cb-4652-a021-5d65c4f836ea)
+![filesecond](https://github.com/Oviya24032K6/copy-file/assets/147139999/ded8510b-b96c-4306-aad6-72c9caab3f78)
+
 
 
 ## RESULT:
